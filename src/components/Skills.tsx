@@ -57,8 +57,7 @@ export default function Skills() {
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">
-            My Development Stack
-          </span>
+Technologies I Use          </span>
         </h2>
 
         <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
@@ -117,6 +116,26 @@ export default function Skills() {
 
                 </div>
               )}
+              {skill.name === "JavaScript" && (
+  <div className="w-full mt-2">
+
+    <div className="flex justify-between text-xs text-zinc-400 mb-1">
+      
+    </div>
+
+    <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+
+      <motion.div
+        initial={{ width: 0 }}
+        whileInView={{ width: "85%" }}
+        transition={{ duration: 1 }}
+        className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
+      />
+
+    </div>
+
+  </div>
+)}
             </motion.div>
           );
         })}
