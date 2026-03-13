@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiGithub, FiInstagram, FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import {
+  FiGithub,
+  FiInstagram,
+  FiMail,
+  FiMapPin,
+  FiSend,
+  FiLinkedin,
+} from "react-icons/fi";
 
 const socialLinks = [
   {
@@ -24,6 +31,13 @@ const socialLinks = [
     url: "https://mail.google.com/mail/?view=cm&fs=1&to=meeedsahtoute@gmail.com",
     color:
       "hover:text-[#EA4335] hover:border-[#EA4335] hover:shadow-[0_0_20px_rgba(234,67,53,0.8)]",
+  },
+  {
+    name: "LinkedIn",
+    icon: FiLinkedin,
+    url: "https://www.linkedin.com/in/mohammed-assahtout-5530223b7/",
+    color:
+      "hover:text-[#0A66C2] hover:border-[#0A66C2] hover:shadow-[0_0_20px_rgba(10,102,194,0.8)]",
   },
 ];
 
@@ -63,10 +77,8 @@ export default function Contact() {
           target="_blank"
           className="relative inline-flex items-center justify-center gap-3 px-8 py-4 font-bold text-white rounded-full overflow-hidden group mb-12"
         >
-          {/* Glow */}
           <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></span>
 
-          {/* Button */}
           <span className="relative flex items-center gap-3 px-8 py-4 bg-black rounded-full transition-transform duration-300 group-hover:scale-110">
             <FiSend />
             Contact Me
