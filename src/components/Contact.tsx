@@ -63,11 +63,19 @@ export default function Contact() {
           Let's Work Together
         </h2>
 
-        {/* Text */}
-        <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
-          I'm currently open to new opportunities and collaborations.
-          If you have a project idea or simply want to connect,
-          feel free to reach out.
+        {/* Paragraph */}
+        <p className="relative mt-4 mb-10 text-lg md:text-xl max-w-2xl mx-auto text-zinc-300 font-medium text-center">
+
+          <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Feel free to reach out
+          </span>
+
+          <span className="text-zinc-300">
+            {" "}and let's create something great together.
+          </span>
+
+          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-6px] w-32 h-[2px] bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"></span>
+
         </p>
 
         {/* CONTACT BUTTON */}
@@ -86,6 +94,7 @@ export default function Contact() {
 
         {/* Location + Social */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-8 border-t border-white/10">
+
           <div className="flex items-center gap-2 text-zinc-400">
             <FiMapPin className="text-cyan-400" />
             Nador, Morocco
@@ -105,12 +114,13 @@ export default function Contact() {
               </a>
             ))}
           </div>
+
         </div>
       </motion.div>
 
       <div className="mt-20 text-center text-zinc-600 font-mono text-sm">
         <p>
-          &copy; {new Date().getFullYear()} Mohammed Assahtout. All rights reserved.
+          &copy; {new Date().getFullYear()} Mohammed Assahtoute. All rights reserved.
         </p>
       </div>
     </section>
