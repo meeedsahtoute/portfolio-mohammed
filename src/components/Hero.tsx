@@ -49,8 +49,8 @@ export default function Hero() {
             <span className="mr-2">&gt;</span>
             <Typewriter
 words={[
-'Laravel Developer',
-'PHP Backend Developer',
+'Full Stack Web Developer',
+'JavaScript Web Developer',
 'MySQL Database Builder',
 'Modern Web Application Developer'
 ]}
