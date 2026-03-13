@@ -50,9 +50,10 @@ export default function Hero() {
             <Typewriter
 words={[
 'Full Stack Web Developer',
+'Laravel Web Developer',
+
 'JavaScript Web Developer',
 'MySQL Database Builder',
-'Modern Web Application Developer'
 ]}
               loop={true}
               cursor
