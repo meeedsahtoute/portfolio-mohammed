@@ -47,7 +47,6 @@ export default function Contact() {
       id="contact"
       className="py-24 relative w-full max-w-4xl mx-auto px-6 z-10"
     >
-      {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-96 bg-purple-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
       <motion.div
@@ -61,14 +60,14 @@ export default function Contact() {
 
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-          Let's Build Something
+          Let's Work Together
         </h2>
 
         {/* Text */}
         <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
-          I'm currently looking for new opportunities. Whether you have a
-          question, a project idea, or just want to say hi, feel free to drop a
-          message!
+          I'm currently open to new opportunities and collaborations.
+          If you have a project idea or simply want to connect,
+          feel free to reach out.
         </p>
 
         {/* CONTACT BUTTON */}
@@ -109,11 +108,9 @@ export default function Contact() {
         </div>
       </motion.div>
 
-      {/* Footer */}
       <div className="mt-20 text-center text-zinc-600 font-mono text-sm">
         <p>
-          &copy; {new Date().getFullYear()} Mohammed Assahtout. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Mohammed Assahtout. All rights reserved.
         </p>
       </div>
     </section>

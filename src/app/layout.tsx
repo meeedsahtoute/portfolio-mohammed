@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammed Assahtoute | Full Stack Developer",
+  title: "Mohammed Assahtout | Full Stack Developer",
   description: "Futuristic Developer Portfolio of Mohammed Assahtoute - Full Stack Web Developer based in Nador, Morocco.",
 };
 
