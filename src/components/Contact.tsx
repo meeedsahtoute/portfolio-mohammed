@@ -21,7 +21,7 @@ const socialLinks = [
   {
     name: "Email",
     icon: FiMail,
-    url: "mailto:meeedsahtoute@gmail.com",
+    url: "https://mail.google.com/mail/?view=cm&fs=1&to=meeedsahtoute@gmail.com",
     color:
       "hover:text-[#EA4335] hover:border-[#EA4335] hover:shadow-[0_0_20px_rgba(234,67,53,0.8)]",
   },
@@ -57,15 +57,16 @@ export default function Contact() {
           message!
         </p>
 
-        {/* CYBER CONTACT BUTTON */}
+        {/* CONTACT BUTTON */}
         <a
-          href="mailto:meeedsahtoute@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=meeedsahtoute@gmail.com"
+          target="_blank"
           className="relative inline-flex items-center justify-center gap-3 px-8 py-4 font-bold text-white rounded-full overflow-hidden group mb-12"
         >
-          {/* Glow layer */}
+          {/* Glow */}
           <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></span>
 
-          {/* Button body */}
+          {/* Button */}
           <span className="relative flex items-center gap-3 px-8 py-4 bg-black rounded-full transition-transform duration-300 group-hover:scale-110">
             <FiSend />
             Contact Me
@@ -75,7 +76,8 @@ export default function Contact() {
         {/* Location + Social */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-8 border-t border-white/10">
           <div className="flex items-center gap-2 text-zinc-400">
-            <FiMapPin className="text-cyan-400" /> Nador, Morocco
+            <FiMapPin className="text-cyan-400" />
+            Nador, Morocco
           </div>
 
           <div className="flex gap-4">
