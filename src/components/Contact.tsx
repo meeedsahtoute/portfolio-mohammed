@@ -112,10 +112,9 @@ export default function Contact() {
       {/* Footer */}
       <div className="mt-20 text-center text-zinc-600 font-mono text-sm">
         <p>
-          &copy; {new Date().getFullYear()} Mohammed Assahtoute. All rights
+          &copy; {new Date().getFullYear()} Mohammed Assahtout. All rights
           reserved.
         </p>
-        <p className="mt-2">Designed visually. Engineered scientifically.</p>
       </div>
     </section>
   );
