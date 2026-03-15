@@ -5,7 +5,7 @@ import {
   SiHtml5,
   SiCss,
   SiJavascript,
-  SiPhp,
+  SiBootstrap,
   SiLaravel,
   SiMysql,
   SiGit,
@@ -15,6 +15,7 @@ import {
 const skills = [
   { name: "HTML", icon: SiHtml5, color: "#E34F26" },
   { name: "CSS", icon: SiCss, color: "#1572B6" },
+  { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
   { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
   { name: "MySQL", icon: SiMysql, color: "#4479A1" },
@@ -57,7 +58,8 @@ export default function Skills() {
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">
-Technologies I Use          </span>
+            Technologies I Use
+          </span>
         </h2>
 
         <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
@@ -97,45 +99,44 @@ Technologies I Use          </span>
               {/* Laravel Progress */}
               {skill.name === "Laravel" && (
                 <div className="w-full mt-2">
-
-                  <div className="flex justify-between text-xs text-zinc-400 mb-1">
-                   
-                   
-                  </div>
-
                   <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-
                     <motion.div
                       initial={{ width: 0 }}
                       whileInView={{ width: "70%" }}
                       transition={{ duration: 1 }}
                       className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
                     />
-
                   </div>
-
                 </div>
               )}
+
+              {/* JavaScript Progress */}
               {skill.name === "JavaScript" && (
-  <div className="w-full mt-2">
+                <div className="w-full mt-2">
+                  <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "85%" }}
+                      transition={{ duration: 1 }}
+                      className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
+                    />
+                  </div>
+                </div>
+              )}
 
-    <div className="flex justify-between text-xs text-zinc-400 mb-1">
-      
-    </div>
-
-    <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-
-      <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: "85%" }}
-        transition={{ duration: 1 }}
-        className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
-      />
-
-    </div>
-
-  </div>
-)}
+              {/* Bootstrap Progress */}
+              {skill.name === "Bootstrap" && (
+                <div className="w-full mt-2">
+                  <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "80%" }}
+                      transition={{ duration: 1 }}
+                      className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
+                    />
+                  </div>
+                </div>
+              )}
             </motion.div>
           );
         })}
