@@ -8,6 +8,7 @@ import {
   SiBootstrap,
   SiLaravel,
   SiMysql,
+  SiMongodb,
   SiGit,
   SiGithub,
 } from "react-icons/si";
@@ -19,6 +20,7 @@ const skills = [
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
   { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
   { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "Git", icon: SiGit, color: "#F05032" },
   { name: "GitHub", icon: SiGithub, color: "#ffffff" },
 ];
@@ -116,12 +118,12 @@ export default function Skills() {
                   <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      whileInView={{ width: "70%" }}
+                      whileInView={{ width: "85%" }}
                       transition={{ duration: 1 }}
                       className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
                     />
                   </div>
-                </div>
+                  </div>
               )}
 
               {/* Bootstrap Progress */}
@@ -130,7 +132,21 @@ export default function Skills() {
                   <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      whileInView={{ width: "87%" }}
+                      whileInView={{ width: "80%" }}
+                      transition={{ duration: 1 }}
+                      className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* MongoDB Progress */}
+              {skill.name === "MongoDB" && (
+                <div className="w-full mt-2">
+                  <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "65%" }}
                       transition={{ duration: 1 }}
                       className="h-full bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full"
                     />
