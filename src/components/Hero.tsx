@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
-import { FiArrowDown, FiMail } from "react-icons/fi";
+import { FiArrowDown, FiMail, FiEye, FiDownload } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -70,7 +70,7 @@ words={[
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="mt-12 flex flex-col sm:flex-row gap-6"
+          className="mt-12 flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6"
         >
           <a
             href="#projects"
@@ -90,6 +90,32 @@ words={[
             <span className="relative flex items-center gap-2">
               Contact Me
               <FiMail className="transition-transform group-hover:scale-110" />
+            </span>
+          </a>
+
+          {/* View CV */}
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-transparent border-2 border-cyan-400 rounded-full overflow-hidden hover:scale-105 hover:shadow-[0_0_20px_rgba(0,243,255,0.5)]"
+          >
+            <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+            <span className="relative flex items-center gap-2">
+              View CV
+              <FiEye className="transition-transform group-hover:scale-110" />
+            </span>
+          </a>
+
+          {/* Download CV */}
+          <a
+            href="/cv.pdf"
+            download
+            className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-gradient-to-r from-[#00f3ff] to-[#0077ff] rounded-full overflow-hidden hover:scale-105 hover:shadow-[0_0_30px_rgba(0,243,255,0.6)]"
+          >
+            <span className="relative flex items-center gap-2">
+              Download CV
+              <FiDownload className="transition-transform group-hover:translate-y-1" />
             </span>
           </a>
         </motion.div>

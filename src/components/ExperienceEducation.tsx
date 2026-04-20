@@ -92,7 +92,7 @@ export default function ExperienceEducation() {
               </div>
             </motion.div>
 
-            {/* Education Item 2 */}
+            {/* Education Item 2: YouCode */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -103,6 +103,30 @@ export default function ExperienceEducation() {
               <div className="flex items-center justify-center w-6 h-6 rounded-full border-4 border-[#050505] bg-neon-purple shadow-[0_0_10px_rgba(157,0,255,0.8)] absolute left-3 md:left-1/2 -translate-x-1/2 group-hover:scale-125 transition-transform"></div>
               
               <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] p-6 glass-panel rounded-2xl md:ml-auto transition-all duration-300 hover:-translate-y-1 hover:border-neon-purple/30 hover:shadow-[0_0_20px_rgba(157,0,255,0.15)]">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-xl font-bold text-white">YouCode – Web Development</h3>
+                </div>
+                <p className="text-zinc-400 text-sm mb-4">
+                  Intensive, Project-Based Training
+                </p>
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 text-xs font-medium rounded-full bg-neon-purple/10 border border-neon-purple/20 text-neon-purple">2023 - 2025</span>
+                  <span className="text-xs font-medium text-zinc-500">Completed alongside formal training</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Education Item 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+            >
+              <div className="flex items-center justify-center w-6 h-6 rounded-full border-4 border-[#050505] bg-neon-purple shadow-[0_0_10px_rgba(157,0,255,0.8)] absolute left-3 md:left-1/2 -translate-x-1/2 group-hover:scale-125 transition-transform"></div>
+              
+              <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] p-6 glass-panel rounded-2xl ml-auto md:ml-0 md:mr-auto transition-all duration-300 hover:-translate-y-1 hover:border-neon-purple/30 hover:shadow-[0_0_20px_rgba(157,0,255,0.15)]">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-xl font-bold text-white">Web Development Training</h3>
                 </div>
